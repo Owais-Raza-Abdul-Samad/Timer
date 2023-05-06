@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/80b06b77b3.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <!-- prompts for timer -->
+    <div class="prompt-for-seconds">
+        <h2>Enter number of seconds</h2>
+        <input type="text" maxlength="2" id="input-sec" autocomplete="off">
+        <button id="remove-sec-prompt">OK</button>
+    </div>
+    <div class="prompt-for-minutes">
+        <h2>Enter number of minutes</h2>
+        <input type="text" maxlength="2" id="input-mins" autocomplete="off">
+        <button id="remove-mins-prompt">OK</button>
+    </div>
+    <div class="prompt-for-hours">
+        <h2>Enter number of hours</h2>
+        <input type="text" maxlength="2" id="input-hrs" autocomplete="off">
+        <button id="remove-hrs-prompt">OK</button>
+    </div>
+    <!-- <=== xxx ===> -->
+
+    <main>
+        <h1>Timer</h1>
+        <div class="timer-numbers">
+            <p id="hrs-display">00</p>
+            <p>:</p>
+            <p id="mins-display">00</p>
+            <p>:</p>
+            <p id="sec-display">00</p>
+        </div>
+        <div class="controls">
+            <button id="pause-btn">
+                <i class="fa-solid fa-pause"></i>
+                <p>Stop</p>
+            </button>
+            <button id="play-btn">
+                <i class="fa-solid fa-play"></i>
+                <p>Start</p>
+            </button>
+            <span class="gap"></span>
+            <button id="reset-btn">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+                <p>Reset</p>
+            </button>
+            <span class="gap"></span>
+            <button id="set-btn">
+                <i class="fa-solid fa-stopwatch"></i>
+                <p>&nbsp; Set &nbsp;</p>
+            </button>
+        </div>
+    </main>
+
+    <!-- End Screen of Timer -->
+    <div class="timer-end-screen">
+        <h1>Time's Up!</h1>
+        <button id="remove-end-screen">OK</button>
+    </div>
+
+    <p class="credits">© Copyright Made by Muhammad Owais Raza</p>
+</body>
+</html>
